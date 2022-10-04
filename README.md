@@ -1,4 +1,4 @@
-# formation
+# Formation Cratfman
 
 Think about the test being spec.
 
@@ -22,3 +22,10 @@ Test creation order
   4- Trigger the code (write the when)
   5- Setup (write the given)
   
+
+Many kind of TDD:
+ - classicist / chicago school
+    (suitable for simple algorithm, e.g  roman arabic converter)
+ - outside-in / london school
+    (suitable for entreprise service)
+   
