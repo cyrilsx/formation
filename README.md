@@ -27,5 +27,7 @@ Many kind of TDD:
  - classicist / chicago school
     (suitable for simple algorithm, e.g  roman arabic converter)
  - outside-in / london school
-    (suitable for entreprise service)
+    (suitable for enterprise service)
    
+Agile provides a lot of disappointed because professional put aside the technical side and took only the process. 
+Cratfmanship was created in 2008 (by uncle Bob) as a counter-movement of Agile.  

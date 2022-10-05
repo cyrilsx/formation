@@ -7,7 +7,9 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.assertj.core.api.BDDAssumptions.given;
+import static org.mockito.ArgumentMatchers.any;
 
 @ExtendWith(MockitoExtension.class)
 class PaymentServiceShould {
@@ -21,7 +23,9 @@ class PaymentServiceShould {
 
     @Test
     void payment_refuse_if_fraud() {
-        Assertions.assertThatThrownBy(() -> paymentService.processPayment(new User("toto"), new PaymentDetails(1000)))
+        given(fraudService.isFraud(any(), any())).isTrue();
+
+        assertThatThrownBy(() -> paymentService.processPayment(new User("toto"), new PaymentDetails(1000)))
                 .isInstanceOf(PaymentRefusedException.class);
     }
 }
