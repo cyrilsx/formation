@@ -31,3 +31,7 @@ Many kind of TDD:
    
 Agile provides a lot of disappointed because professional put aside the technical side and took only the process. 
 Cratfmanship was created in 2008 (by uncle Bob) as a counter-movement of Agile.  
+
+
+Working with legacy code:
+    - method SEAM
